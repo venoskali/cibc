@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clbc</title>
+
+<style>
+:root{
+  --bg:#f4f4f4;
+  --card:#ffffff;
+  --primary:#8b1d2c;
+  --text:#111;
+  --muted:#777;
+  --radius:22px;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{
+  margin:0;
+  background:#000;
+}
+
+.phone{
+  max-width:420px;
+  margin:0 auto;
+  background:var(--bg);
+  min-height:100vh;
+}
+
+.top{
+  padding:20px 18px 10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.icons{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+.search{
+  font-size:18px;
+}
+
+.avatar{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+}
+
+.section{
+  padding:12px 18px;
+  font-size:13px;
+  letter-spacing:2px;
+  color:var(--muted);
+}
+
+.card{
+  background:var(--card);
+  margin:0 14px 18px;
+  padding:18px;
+  border-radius:var(--radius);
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.account{
+  font-size:20px;
+  margin-bottom:6px;
+}
+
+.balance{
+  font-size:36px;
+  font-weight:700;
+  margin:10px 0 18px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  padding:14px;
+  border-radius:16px;
+  border:none;
+  font-size:15px;
+  flex:1;
+}
+
+.debit{
+  background:var(--primary);
+  color:#fff;
+}
+
+.outline{
+  background:#fff;
+  border:1px solid #ddd;
+}
+
+.more{
+  width:44px;
+  font-size:20px;
+}
+
+.small-card{
+  font-size:14px;
+  color:#333;
+}
+
+.footer{
+  text-align:center;
+  font-size:11px;
+  color:#999;
+  padding:18px;
+}
+</style>
+</head>
+
+<body>
+<div class="phone">
+
+  <div class="top">
+    <div class="logo">clbc</div>
+    <div class="icons">
+      <div class="search">🔍</div>
+      <div class="avatar">sk</div>
+    </div>
+  </div>
+
+  <div class="section">deposit accounts</div>
+
+  <div class="card">
+    <div class="row">
+      <div class="account">chequing</div>
+      <div>›</div>
+    </div>
+
+    <div class="balance">$5,628,811</div>
+
+    <div class="actions">
+      <button class="btn debit">debit</button>
+      <button class="btn outline">send money</button>
+      <button class="btn outline more">⋯</button>
+    </div>
+  </div>
+
+  <div class="section">insights</div>
+
+  <div class="card small-card">
+    your spending this month<br>
+    <span style="color:var(--primary)">turn on insights</span>
+  </div>
+
+  <div class="section">private access</div>
+
+  <div class="card small-card">
+    invitation only — confidential dashboard
+  </div>
+
+  <div class="footer">
+    fictional interface for entertainment only — clbc is not a real bank
+  </div>
+
+</div>
+</body>
+</html>
